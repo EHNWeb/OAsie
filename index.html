@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OAsie</title>
+
+    <!-- CSS Local Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
 </head>
-<!DOCTYPE html>
-<html>
-<script src="/scripts/includeHTML.js"></script>
 
 <body>
-    <div w3-include-html="template/header.html"></div>
-    <div w3-include-html="template/content.html"></div>
-    <div w3-include-html="template/footer.html"></div>
-    <script>
-        includeHTML();
-    </script>
+    <include src="/template/header.html"></include>
+    <include src="/template/content.html"></include>
+    <include src="/template/footer.html"></include>
 
-<include src="/template/header.html"></include>
-<include src="/template/content.html"></include>
-<include src="/template/footer.html"></include>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/032b0d3637.js" crossorigin="anonymous"></script>
+
+    <!-- JS Bootstrap -->
+    <script src="/scripts/bootstrap.bundle.js"></script>
 </body>
+
+</html>
