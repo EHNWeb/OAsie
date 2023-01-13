@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,17 @@
 <!DOCTYPE html>
 <html>
 <script src="/scripts/includeHTML.js"></script>
+
 <body>
+    <div w3-include-html="template/header.html"></div>
+    <div w3-include-html="template/content.html"></div>
+    <div w3-include-html="template/footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
 
-<div w3-include-html="template/content.html"></div> 
-
-<script>
-includeHTML();
-</script>
+<include src="/template/header.html"></include>
+<include src="/template/content.html"></include>
+<include src="/template/footer.html"></include>
 
 </body>
