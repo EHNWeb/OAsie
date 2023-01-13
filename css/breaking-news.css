@@ -1,0 +1,29 @@
+.news {
+  width: 160px;
+}
+
+.news-scroll a {
+  text-decoration: none;
+  color: rgb(255,193,7);
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px !important;
+  background-color: rgb(255,193,7);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.breaking-news {
+  background-color: #dc3545;
+}
+
+.breaking-title {
+  background-color: #ffc107;
+  color: #dc3545;
+}
+

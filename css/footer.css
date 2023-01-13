@@ -1,0 +1,15 @@
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgb(255,193,7) !important;
+}
+
+.link-secondary {
+  color: rgb(255,193,7) !important;
+  text-decoration: none;
+}
+
+.link-secondary:hover, .link-secondary:focus {
+  color: #dc3545 !important;
+  background-color: rgb(255,193,7);
+}
+
