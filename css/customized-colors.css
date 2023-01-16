@@ -2,6 +2,7 @@
     --oasie-jaune: rgb(255, 193, 7);
     --oasie-rouge: rgb(220, 53, 69);
     --oasie-rouge-transparent: rgba(220, 53, 69, .5);
+    --oasie-jaune-transparent: rgba(255, 193, 7, .5);
 }
 
 
@@ -16,4 +17,23 @@
 
 .carousel-indicators [data-bs-target] {
     background-color: var(--oasie-jaune);
-  }
+}
+
+.nav-tabs .nav-link {
+    border: 1;
+    border-bottom: 1px solid var(--oasie-rouge);
+}
+
+.nav-tabs .nav-link:hover {
+    border: 1;
+    border-color: var(--oasie-jaune);
+    border-bottom: 1px solid var(--oasie-jaune);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--oasie-jaune-transparent);
+    font-weight: bold;
+    border: 2;
+    border-radius: 1;
+    border: 1px solid var(--oasie-rouge);
+}
