@@ -5,6 +5,15 @@
     --oasie-jaune-transparent: rgba(255, 193, 7, .5);
 }
 
+.carousel-accueil-control {
+    background-color: var(--oasie-rouge-transparent);
+    color: var(--oasie-jaune);
+}
+
+.carousel-accueil-bandeau {
+    background-color: var(--oasie-rouge-transparent);
+}
+
 .carousel-accueil-titre {
     color: var(--oasie-jaune);
     font-weight: bold;
@@ -12,6 +21,24 @@
 
 .carousel-accueil-sous-titre {
     color: var(--oasie-jaune);
+}
+
+.carousel-restaurant-control {
+    background-color: var(--oasie-jaune-transparent);
+    color: var(--oasie-rouge);
+}
+
+.carousel-restaurant-bandeau {
+    background-color: var(--oasie-jaune-transparent);
+}
+
+.carousel-restaurant-titre {
+    color: var(--oasie-rouge);
+    font-weight: bold;
+}
+
+.carousel-restaurant-sous-titre {
+    color: var(--oasie-rouge);
 }
 
 .carousel-indicators [data-bs-target] {
