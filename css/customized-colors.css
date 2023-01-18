@@ -5,44 +5,27 @@
     --oasie-jaune-transparent: rgba(255, 193, 7, .5);
 }
 
-.carousel-accueil-control {
-    background-color: var(--oasie-rouge-transparent);
+.carousel-custom-control {
+    background-color: var(--oasie-rouge);
     color: var(--oasie-jaune);
 }
 
-.carousel-accueil-bandeau {
-    background-color: var(--oasie-rouge-transparent);
+.carousel-custom-bandeau {
+    background-color: var(--oasie-rouge);
 }
 
-.carousel-accueil-titre {
+.carousel-custom-titre {
     color: var(--oasie-jaune);
     font-weight: bold;
 }
 
-.carousel-accueil-sous-titre {
+.carousel-custom-sous-titre {
     color: var(--oasie-jaune);
 }
 
-.carousel-restaurant-control {
-    background-color: var(--oasie-jaune-transparent);
-    color: var(--oasie-rouge);
-}
-
-.carousel-restaurant-bandeau {
-    background-color: var(--oasie-jaune-transparent);
-}
-
-.carousel-restaurant-titre {
-    color: var(--oasie-rouge);
-    font-weight: bold;
-}
-
-.carousel-restaurant-sous-titre {
-    color: var(--oasie-rouge);
-}
-
-.carousel-indicators [data-bs-target] {
+.carousel-custom-control {
     background-color: var(--oasie-jaune);
+    color: var(--oasie-rouge);
 }
 
 .nav-tabs .nav-link {
