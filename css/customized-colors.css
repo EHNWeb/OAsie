@@ -46,3 +46,7 @@
     border-radius: 1;
     border: 1px solid var(--oasie-rouge);
 }
+
+.card-bordure {
+    border: 1px solid var(--oasie-rouge);
+}
