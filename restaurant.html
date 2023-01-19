@@ -324,9 +324,8 @@
         <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
             <!-- Premier niveau, premier onglet (MENUS) -->
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="menus-tab" data-bs-toggle="tab" data-bs-target="#menus"
-                    type="button" role="tab" aria-controls="menus" aria-selected="true"
-                    style="color: var(--oasie-rouge);">Nos
+                <button class="nav-link active" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menu" type="button"
+                    role="tab" aria-controls="menus" aria-selected="true" style="color: var(--oasie-rouge);">Nos
                     menus</button>
             </li>
             <!-- Premier niveau, second onglet (CARTE) -->
@@ -340,7 +339,7 @@
         <!-- Contenu des onglets -->
         <div class="tab-content" id="myTabContentMenu">
             <!-- Contenu Onglet MENUS -->
-            <div class="tab-pane fade show active" id="menus" role="tabpanel" aria-labelledby="menus-tab">
+            <div class="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="menu-tab">
                 <br>
                 <!-- Card group -->
                 <div class="card-group mb-1" style="color: var(--oasie-rouge);">
@@ -387,366 +386,368 @@
             </div>
         </div>
 
-        <!-- Contenu Onglet CARTE -->
-        <div class="tab-pane fade" id="carte" role="tabpanel" aria-labelledby="carte-tab">
-            <!-- Navigation à onglet second niveau -->
-            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                <!-- Second niveau (CARTE), premier onglet (ENTREE) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="entree-tab" data-bs-toggle="tab" data-bs-target="#entree"
-                        type="button" role="tab" aria-controls="entree" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Entrées</button>
-                </li>
-                <!-- Second niveau (CARTE), second onglet (VIANDES) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="viande-tab" data-bs-toggle="tab" data-bs-target="#viande" type="button"
-                        role="tab" aria-controls="viande" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Viandes</button>
-                </li>
-                <!-- Second niveau (CARTE), troisième onglet (FRUITSDEMER) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fruitsdemer-tab" data-bs-toggle="tab" data-bs-target="#fruitsdemer"
-                        type="button" role="tab" aria-controls="fruitsdemer" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Fruits de mer</button>
-                </li>
-                <!-- Second niveau (CARTE), quatrième onglet (LEGUMES) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="legumes-tab" data-bs-toggle="tab" data-bs-target="#legumes"
-                        type="button" role="tab" aria-controls="legumes" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Légumes</button>
-                </li>
-                <!-- Second niveau (CARTE), cinquième onglet (PLATSCOMPLETS) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="platscomplets-tab" data-bs-toggle="tab" data-bs-target="#platscomplets"
-                        type="button" role="tab" aria-controls="platscomplets" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Plats complets</button>
-                </li>
-                <!-- Second niveau (CARTE), sixième onglet (SOUPES) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="soupes-tab" data-bs-toggle="tab" data-bs-target="#soupes" type="button"
-                        role="tab" aria-controls="soupes" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Soupes</button>
-                </li>
-                <!-- Second niveau (CARTE), septième onglet (SPECIALITES) -->
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="soupes-tab" data-bs-toggle="tab" data-bs-target="#soupes" type="button"
-                        role="tab" aria-controls="soupes" aria-selected="true"
-                        style="color: var(--oasie-rouge);">Spécialités</button>
-                </li>
-            </ul>
+        <!-- Contenu des onglets -->
+        <div class="tab-content" id="myTabContentCarte">
+            <!-- Contenu Onglet CARTE -->
+            <div class="tab-pane fade" id="carte" role="tabpanel" aria-labelledby="carte-tab">
+                <!-- Navigation à onglet second niveau -->
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <!-- Second niveau (CARTE), premier onglet (ENTREE) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="entree-tab" data-bs-toggle="tab" data-bs-target="#entree"
+                            type="button" role="tab" aria-controls="entree" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Entrées</button>
+                    </li>
+                    <!-- Second niveau (CARTE), second onglet (VIANDES) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="viande-tab" data-bs-toggle="tab" data-bs-target="#viande"
+                            type="button" role="tab" aria-controls="viande" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Viandes</button>
+                    </li>
+                    <!-- Second niveau (CARTE), troisième onglet (FRUITSDEMER) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fruitsdemer-tab" data-bs-toggle="tab" data-bs-target="#fruitsdemer"
+                            type="button" role="tab" aria-controls="fruitsdemer" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Fruits de mer</button>
+                    </li>
+                    <!-- Second niveau (CARTE), quatrième onglet (LEGUMES) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="legumes-tab" data-bs-toggle="tab" data-bs-target="#legumes"
+                            type="button" role="tab" aria-controls="legumes" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Légumes</button>
+                    </li>
+                    <!-- Second niveau (CARTE), cinquième onglet (PLATSCOMPLETS) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="platscomplets-tab" data-bs-toggle="tab"
+                            data-bs-target="#platscomplets" type="button" role="tab" aria-controls="platscomplets"
+                            aria-selected="true" style="color: var(--oasie-rouge);">Plats complets</button>
+                    </li>
+                    <!-- Second niveau (CARTE), sixième onglet (SOUPES) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="soupes-tab" data-bs-toggle="tab" data-bs-target="#soupes"
+                            type="button" role="tab" aria-controls="soupes" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Soupes</button>
+                    </li>
+                    <!-- Second niveau (CARTE), septième onglet (SPECIALITES) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="soupes-tab" data-bs-toggle="tab" data-bs-target="#soupes"
+                            type="button" role="tab" aria-controls="soupes" aria-selected="true"
+                            style="color: var(--oasie-rouge);">Spécialités</button>
+                    </li>
+                </ul>
 
-            <!-- Contenu des onglets -->
-            <div class="tab-content" id="myTabContentEntree">
-                <!-- Contenu Onglet ENTREE -->
-                <div class="tab-pane fade show active" id="entree" role="tabpanel" aria-labelledby="entree-tab">
-                    <br>
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Nems_Végétarien_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E1. Nem végétarien</h4>
-                                <p class="card-text">(par pièce)</p>
+                <!-- Contenu des onglets -->
+                <div class="tab-content" id="myTabContentEntree">
+                    <!-- Contenu Onglet ENTREE -->
+                    <div class="tab-pane fade show active" id="entree" role="tabpanel" aria-labelledby="entree-tab">
+                        <br>
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Nems_Végétarien_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E1. Nem végétarien</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Nems_Au_Porc_396x396.webp" width="396" height="322"
+                                        style="height: auto;">
+                                    <h4 class="card-title">E2. Nem au porc</h4>
+                                    <p class="card-text">(par pièce).</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Ravioli_Vapeur_Crevette_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E3. Ravioli vapeur crevette</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Nems_Au_Porc_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E2. Nem au porc</h4>
-                                <p class="card-text">(par pièce).</p>
+                        <!-- Card group -->
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Ravioli_Au_Poulet_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E4. Ravioli au poulet</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Brochette_De_Boulette_Au_Poulet_Unité_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">E5. Brochette de boulette au poulet</h4>
+                                    <p class="card-text">(par pièce).</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">2,00 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Bœuf_Tranché_Et_Langue_De_Bœuf_En_Sauce_Chili_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">E6. Bœuf tranché et langue de bœuf en sauce chili</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">10,50 €</h5>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Ravioli_Vapeur_Crevette_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E3. Ravioli vapeur crevette</h4>
-                                <p class="card-text">(par pièce)</p>
+                        <!-- Card group -->
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Nems_Au_Poulet_396x396.webp" width="396" height="322"
+                                        style="height: auto;">
+                                    <h4 class="card-title">E7. Nem au poulet</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Nem_Au_Crevette_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E8. Nem au crevette</h4>
+                                    <p class="card-text">(par pièce).</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Mini_Brioche_Au_Porc_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E9. Mini brioche au porc</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
                             </div>
                         </div>
+                        <!-- Card group -->
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Samosa_Bœuf_396x396.webp" width="396" height="322"
+                                        style="height: auto;">
+                                    <h4 class="card-title">E10. Samosa bœuf</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Sui_Mai_Au_Crevette_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E11. Sui mai au crevette</h4>
+                                    <p class="card-text">(par pièce).</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,00 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Cuisse_De_Poulet_À_La_Sauce_Piquante_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">E12. Cuisse de poulet à la sauce piquante</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">10,50 €</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card group -->
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Salade_De_Concombre_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E13. Salade de concombre</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">8,50 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Salade_D_algue_396x396.webp" width="396" height="322"
+                                        style="height: auto;">
+                                    <h4 class="card-title">E14. Salade d'algue</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">8,50 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Salade_De_Pomme_De_Terre_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E15. Salade de pomme de terre</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">7,50 €</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card group -->
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Ravioli_Végétarien_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E16. Ravioli végétarien</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">0,90 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Brochette_Bœuf-fromage_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E17. Brochette bœuf-fromage</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">1,80 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Entrées/Brochette_Au_Poulet_396x396.webp" width="396"
+                                        height="322" style="height: auto;">
+                                    <h4 class="card-title">E18. Brochette au poulet</h4>
+                                    <p class="card-text">(par pièce)</p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">7,50 €</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card group -->
                     </div>
-                    <!-- Card group -->
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Ravioli_Au_Poulet_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E4. Ravioli au poulet</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Brochette_De_Boulette_Au_Poulet_Unité_396x396.webp"
-                                    width="396" height="322" style="height: auto;">
-                                <h4 class="card-title">E5. Brochette de boulette au poulet</h4>
-                                <p class="card-text">(par pièce).</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">2,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Bœuf_Tranché_Et_Langue_De_Bœuf_En_Sauce_Chili_396x396.webp"
-                                    width="396" height="322" style="height: auto;">
-                                <h4 class="card-title">E6. Bœuf tranché et langue de bœuf en sauce chili</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">10,50 €</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card group -->
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Nems_Au_Poulet_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E7. Nem au poulet</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Nem_Au_Crevette_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E8. Nem au crevette</h4>
-                                <p class="card-text">(par pièce).</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Mini_Brioche_Au_Porc_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E9. Mini brioche au porc</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card group -->
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Samosa_Bœuf_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E10. Samosa bœuf</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Sui_Mai_Au_Crevette_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E11. Sui mai au crevette</h4>
-                                <p class="card-text">(par pièce).</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,00 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Cuisse_De_Poulet_À_La_Sauce_Piquante_396x396.webp"
-                                    width="396" height="322" style="height: auto;">
-                                <h4 class="card-title">E12. Cuisse de poulet à la sauce piquante</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">10,50 €</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card group -->
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Salade_De_Concombre_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E13. Salade de concombre</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">8,50 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Salade_D_algue_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E14. Salade d'algue</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">8,50 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Salade_De_Pomme_De_Terre_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E15. Salade de pomme de terre</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">7,50 €</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card group -->
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Ravioli_Végétarien_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">E16. Ravioli végétarien</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">0,90 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Brochette_Bœuf-fromage_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E17. Brochette bœuf-fromage</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">1,80 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Entrées/Brochette_Au_Poulet_396x396.webp" width="396"
-                                    height="322" style="height: auto;">
-                                <h4 class="card-title">E18. Brochette au poulet</h4>
-                                <p class="card-text">(par pièce)</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">7,50 €</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card group -->
                 </div>
-            </div>
 
-            <!-- Contenu des onglets -->
-            <div class="tab-content" id="myTabContentViandes">
-                <!-- Contenu Onglet MENUS -->
-                <div class="tab-pane fade show active" id="viande" role="tabpanel" aria-labelledby="viande-tab">
-                    <br>
-                    <!-- Card group -->
-                    <div class="card-group mb-1" style="color: var(--oasie-rouge);">
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Viandes/Beignets_De_Porc_Sauce_Aigre-douce_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">V1. Beignets de porc sauce aigre-douce</h4>
-                                <p class="card-text"></p>
+                <!-- Contenu des onglets -->
+                <div class="tab-content" id="myTabContentViandes">
+                    <!-- Contenu Onglet MENUS -->
+                    <div class="tab-pane fade show" id="viande" role="tabpanel" aria-labelledby="viande-tab">
+                        <br>
+                        <!-- Card group -->
+                        <div class="card-group mb-1" style="color: var(--oasie-rouge);">
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Viandes/Beignets_De_Porc_Sauce_Aigre-douce_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">V1. Beignets de porc sauce aigre-douce</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">13,80 €</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="card-body">13,80 €</h5>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Viandes/Travers_De_Porc_À_La_Sauce_Aigre-douce_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">V2. Travers de porc à la sauce aigre-douce</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">13,80 €</h5>
+                                </div>
+                            </div>
+
+                            <div class="card card-bordure">
+                                <div class="card-body">
+                                    <img class="img-fluid card-img-top w-100 d-block"
+                                        src="./images/Plat/Viandes/Bœuf_Sauté_Sur_Plaque_Chauffante_396x396.webp"
+                                        width="396" height="322" style="height: auto;">
+                                    <h4 class="card-title">V3. Bœuf sauté sur plaque chauffante.</h4>
+                                    <p class="card-text"></p>
+                                </div>
+                                <div>
+                                    <h5 class="card-body">13,80 €</h5>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Viandes/Travers_De_Porc_À_La_Sauce_Aigre-douce_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">V2. Travers de porc à la sauce aigre-douce</h4>
-                                <p class="card-text"></p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">13,80 €</h5>
-                            </div>
-                        </div>
-
-                        <div class="card card-bordure">
-                            <div class="card-body">
-                                <img class="img-fluid card-img-top w-100 d-block"
-                                    src="./images/Plat/Formules/Menu_C_396x396.webp" width="396" height="322"
-                                    style="height: auto;">
-                                <h4 class="card-title">M2. Menu C</h4>
-                                <p class="card-text">Plat + accompagnement au choix + dessert ou boisson.</p>
-                            </div>
-                            <div>
-                                <h5 class="card-body">11,80 €</h5>
-                            </div>
-                        </div>
+                        <!-- Card group -->
                     </div>
-                    <!-- Card group -->
                 </div>
             </div>
         </div>
     </div>
-
     <!-- MAIN -->
 
     <br>
@@ -809,7 +810,8 @@
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-last align-items-lg-start order-lg-last item social"
                     style="width: auto;height: 140px;"><img class="img-fluid d-lg-flex img-fluid"
-                        src="./images/Logo/Logo_OAsie.webp" width="130px" height="130px" style="margin: auto;"></div>
+                        src="./images/Logo/Logo_OAsie.webp" width="130px" height="130px" style="margin: auto;">
+                </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3">
