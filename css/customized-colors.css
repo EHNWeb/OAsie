@@ -50,3 +50,7 @@
 .card-bordure {
     border: 1px solid var(--oasie-rouge);
 }
+
+.container {
+    width: 1024px;
+}
