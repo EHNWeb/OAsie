@@ -52,5 +52,60 @@
 }
 
 .container {
-    width: 1024px;
+    width: 1140px;
+}
+
+#myBtnTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 3px var(--oasie-rouge);
+    outline: none;
+    background-color: var(--oasie-jaune);
+    color: var(--oasie-rouge);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#myBtnTop:hover {
+    background-color: var(--oasie-rouge);
+    color: var(--oasie-jaune);
+    border: solid 3px var(--oasie-jaune);
+}
+
+#myBtnMenu {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: var(--oasie-rouge);
+    border: solid 3px var(--oasie-jaune);
+}
+
+#myBtnMenu:hover {
+    background-color: var(--oasie-jaune);
+    border: solid 3px var(--oasie-rouge);
+}
+
+.sidebarHeader {
+    color: var(--oasie-rouge);
+    background-color: var(--oasie-jaune);
+}
+
+.sidebarBtnClose {
+    border: solid 3px var(--oasie-rouge);
+    border-radius: 5px;
+    color: var(--oasie-rouge);
+    font-weight: bold;
+    background-color: var(--oasie-jaune);
+}
+
+.sidebarBody {
+    background-color: var(--oasie-rouge);
+    color: var(--oasie-jaune);
 }

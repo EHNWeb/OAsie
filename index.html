@@ -18,8 +18,8 @@
     <!-- CSS Customized colors -->
     <link href="./css/customized-style.css" rel="stylesheet">
 
-    <!-- JS Local -->
-    <script src="./scripts/customized-script.js"></script>
+    <!-- JAVASCRIPT Local appelé avant le chargement de la page-->
+    <script src="./scripts/custom-before-script.js"></script>
 
     <!-- FONT Google -->
     <link rel="stylesheet"
@@ -31,117 +31,135 @@
 
 <body>
     <!-- HEADER -->
-    <div class="sticky-top">
-        <!-- Include bar de navigation -->
-        <section class="showcase">
-            <nav class="navbar navbar-light navbar-expand-md bg-danger d-xl-flex align-items-xl-center py-3"
-                style="background: var(--oasie-rouge);color: rgb(33, 37, 41);position: static;">
-                <div class="container">
-                    <a class="navbar-brand d-flex flex-row" href="#" style="height: 43px;">
-                        <img src="./images/Logo/Logo_OAsie.webp" style="width: 43px;height: 43px;margin-right: 5px;">
-                        <span class="text-warning d-flex d-md-flex align-items-center align-items-md-center"
-                            style="font-family: Merienda, serif;font-size: 36px;font-weight: bold;height: 43px;margin-left: 5px;">O'Asie
-                        </span>
-                    </a>
-                    <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"
-                        style="color: var(--oasie-jaune);">
-                        <span class="visually-hidden">Toggle navigation</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                                d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
-                                fill="currentColor"></path>
-                            <path
-                                d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
-                                fill="currentColor"></path>
-                            <path
-                                d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navcol-1" style="font-size: 20px;">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active fw-bold link-warning link-secondary rounded"
-                                    href="./restaurant.html">Restaurant</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold link-warning link-secondary rounded"
-                                    href="./ktv.html">Karaoké</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold link-warning link-secondary rounded"
-                                    href="./coworking.html">Coworking</a>
-                            </li>
-                        </ul>
-                        <a class="btn btn-primary" role="button"
-                            style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-right: 5px;font-weight: bold;margin-left: 5px;"
-                            href="./carte.html">Notre carte</a>
-                        <a class="btn btn-primary" role="button"
-                            style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-left: 5px;font-weight: bold;"
-                            href="./formule.html">Nos formules</a>
-                        <button class="btn" type="button"
-                            style="background: transparent;margin-left: 5px;border-style: none;width: 42px;"
-                            data-bs-target="#modal-1" data-bs-toggle="modal">
-                            <i class="fas fa-map-marked-alt text-warning fa-2x"
-                                style="margin: 0;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;width: 18px;height: 16px;">
-                            </i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <!-- Nav -->
-
-        <!-- Include bar information -->
-        <div class="d-lg-flex flex-row" style="height: 32px;position: static;background: var(--oasie-rouge);">
-            <div class="d-lg-flex d-flex justify-content-between align-items-center breaking-news"
-                style="width: 90%;margin-right: auto;margin-left: auto;height: 32px;background: var(--oasie-rouge);">
-                <div class="d-xl-flex align-items-xl-center d-flex flex-row flex-grow-1 flex-fill justify-content-center text-white px-1 news"
-                    style="height: 24px;padding: 0px 0px;padding-top: 0px;padding-bottom: 0px;margin-top: 3px;background: var(--oasie-rouge);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                        viewBox="0 0 16 16" class="bi bi-info-square"
-                        style="color: var(--oasie-jaune);height: 24px;width: 24px;margin-right: 10px;">
+    <!-- Include bar de navigation -->
+    <section class="showcase">
+        <nav class="navbar navbar-light navbar-expand-md bg-danger d-xl-flex align-items-xl-center"
+            style="background: var(--oasie-rouge);color: rgb(33, 37, 41);position: static;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex flex-row" href="./index.html">
+                    <img src="./images/Logo/Logo_OAsie.webp" style="width: 43px;height: 43px;margin-right: 5px;">
+                    <span class="text-warning d-flex d-md-flex align-items-center align-items-md-center"
+                        style="font-family: Merienda, serif;font-size: 36px;font-weight: bold;height: 43px;margin-left: 5px;">O'Asie
+                    </span>
+                </a>
+                <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"
+                    style="color: var(--oasie-jaune);">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
                         <path
-                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z">
-                        </path>
+                            d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                            fill="currentColor"></path>
                         <path
-                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
-                        </path>
+                            d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                            fill="currentColor"></path>
                     </svg>
-                    <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
-                        onmouseout="this.start();">
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;Ouverture&nbsp;&nbsp;</span>&nbsp;&nbsp;7
-                            jours
-                            sur 7</a>
-                        <span class="dot"></span>
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;Restaurant&nbsp;&nbsp;</span>&nbsp;&nbsp;De
-                            11h00 à 14h00 et de 18h00 à 23h00</a>
-                        <span class="dot"></span>
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;KTV /
-                                Karaoké&nbsp;&nbsp;</span>&nbsp;&nbsp;De
-                            18h00 à 01h00</a>
-                        <span class="dot"></span>
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;Co-Working&nbsp;&nbsp;</span>&nbsp;&nbsp;De
-                            14h00 à 18h00</a>
-                        <span class="dot"></span>
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;Adresse&nbsp;&nbsp;</span>&nbsp;&nbsp;20
-                            Rue
-                            Mstislav Rostropovitch, 75017 Paris, France</a>
-                        <span class="dot"></span>
-                        <a href="#"><span class="breaking-title">&nbsp;&nbsp;Téléphone&nbsp;&nbsp;</span>&nbsp;&nbsp;+33
-                            (0)1 56 92 05 78</a>
-                    </marquee>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="font-size: 20px;">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold link-warning link-secondary rounded"
+                                href="./restaurant.html">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold link-warning link-secondary rounded"
+                                href="./ktv.html">Karaoké</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold link-warning link-secondary rounded"
+                                href="./coworking.html">Coworking</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary" role="button"
+                        style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-right: 5px;font-weight: bold;margin-left: 5px;"
+                        href="./carte.html">Notre carte</a>
+                    <a class="btn btn-primary" role="button"
+                        style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-left: 5px;font-weight: bold;"
+                        href="./formule.html">Nos formules</a>
+                    <button class="btn" type="button"
+                        style="background: transparent;margin-left: 5px;margin-right: 10px;border-style: none;width: 42px;"
+                        data-bs-target="#modal-1" data-bs-toggle="modal">
+                        <i class="fas fa-map-marked-alt text-warning fa-2x"
+                            style="margin: 0;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;width: 18px;height: 16px;">
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Nav -->
+
+    <!-- SIDE BAR -->
+    <div class="offcanvas offcanvas-start" id="oasiemenu">
+        <div class="offcanvas-header sidebarHeader">
+            <a class="navbar-brand d-flex flex-row" href="./index.html">
+                <img src="./images/Logo/Logo_OAsie.webp" style="width: 43px;height: 43px;margin-right: 5px;">
+                <span class="d-flex d-md-flex align-items-center align-items-md-center"
+                    style="font-family: Merienda, serif;font-size: 36px;font-weight: bold;height: 43px;margin-left: 5px;">O'Asie
+                </span>
+            </a>
+            <button type="button" class="sidebarBtnClose" data-bs-dismiss="offcanvas">X</button>
+        </div>
+        <div class="offcanvas-body sidebarBody">
+            <div>
+                <ul class="navbar-nav me-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-warning link-secondary rounded"
+                            href="./restaurant.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-warning link-secondary rounded" href="./ktv.html">Karaoké</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-warning link-secondary rounded"
+                            href="./coworking.html">Coworking</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-primary" role="button"
+                    style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-right: 5px;font-weight: bold;margin-left: 5px;"
+                    href="./carte.html">Notre carte</a>
+                <a class="btn btn-primary" role="button"
+                    style="border: 3px solid var(--bs-yellow);background: var(--bs-white);color: var(--bs-red);margin-left: 5px;font-weight: bold;"
+                    href="./formule.html">Nos formules</a>
+                <button class="btn" type="button"
+                    style="background: transparent;margin-left: 5px;border-style: none;width: 42px;"
+                    data-bs-target="#modal-1" data-bs-toggle="modal">
+                    <i class="fas fa-map-marked-alt text-warning fa-2x"
+                        style="margin: 0;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;width: 18px;height: 16px;">
+                    </i>
+                </button>
+            </div>
+            <br>
+            <div>
+                <iframe allowfullscreen="" frameborder="0" loading="lazy"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpCAABBxaS91Tnaa6CIVO0mnKWvvuap4I&amp;q=O'Asie&amp;zoom=17"
+                    width="100%" height="300">
+                </iframe>
+            </div>
+            <div class="text-center">
+                <p style="margin-bottom: 0px;">20 Rue Mstilav Rostropovitch</p>
+                <p class="d-flex justify-content-center" style="margin-bottom: 0px;">75017 Paris - France</p>
+                <div class="d-flex flex-row justify-content-center align-items-lg-start" style="height: 25px;">
+                    <i class="fas fa-phone-volume d-flex d-lg-flex align-items-center align-items-lg-center"
+                        style="height: 25px;"></i>
+                    <span class="d-flex d-lg-flex align-items-lg-start" style="height: 25px;">&nbsp;: 01 56 92
+                        05
+                        78</span>
                 </div>
             </div>
         </div>
     </div>
+    <!-- SIDE BAR -->
+
     <!-- HEADER -->
 
-    <br>
-
     <!-- MAIN -->
-    <div class="container">
+    <div class="container mt-1">
         <!-- Carousel wrapper -->
         <div id="carouselAccueil" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
@@ -221,7 +239,8 @@
                     width="396" height="322" style="height: 80px;">
                 <div class="card-body">
                     <h4 class="card-title" style="color: var(--oasie-rouge);">Restaurant</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                        dapibus
                         ac
                         facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.Nullam id
                         dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus
@@ -249,7 +268,8 @@
                     src="./images/Icone/karaoke-party-microphone-singing-svgrepo-com.svg" style="height: 80px;">
                 <div class="card-body">
                     <h4 class="card-title" style="color: var(--oasie-rouge);">Karaoké</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                        dapibus
                         ac
                         facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                 </div>
@@ -273,7 +293,8 @@
                     src="./images/Icone/meeting-discussion-presentation-svgrepo-com.svg" style="height: 80px;">
                 <div class="card-body">
                     <h4 class="card-title" style="color: var(--oasie-rouge);">Coworking</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                        dapibus
                         ac
                         facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                 </div>
@@ -328,7 +349,8 @@
                     <div class="d-flex flex-row justify-content-center align-items-lg-start" style="height: 25px;">
                         <i class="fas fa-phone-volume d-flex d-lg-flex align-items-center align-items-lg-center"
                             style="height: 25px;"></i>
-                        <span class="d-flex d-lg-flex align-items-lg-start" style="height: 25px;">&nbsp;: 01 56 92 05
+                        <span class="d-flex d-lg-flex align-items-lg-start" style="height: 25px;">&nbsp;: 01 56 92
+                            05
                             78</span>
                     </div>
                 </div>
@@ -360,7 +382,8 @@
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-last align-items-lg-start order-lg-last item social"
                     style="width: auto;height: 140px;"><img class="img-fluid d-lg-flex img-fluid"
-                        src="./images/Logo/Logo_OAsie.webp" width="130px" height="130px" style="margin: auto;"></div>
+                        src="./images/Logo/Logo_OAsie.webp" width="130px" height="130px" style="margin: auto;">
+                </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3">
@@ -393,7 +416,7 @@
         </div>
     </footer> <!-- FOOTER -->
 
-    <!-- Fichier PopUp -->
+    <!-- POPUP Google map -->
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-1" style="color: rgb(33, 37, 41);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -419,6 +442,20 @@
             </div>
         </div>
     </div>
+    <!-- POPUP Google map -->
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <!-- Back to top button -->
+
+    <!-- Menu Side Bar Button -->
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#oasiemenu" id="myBtnMenu">
+        <img src="./images/Logo/Logo_OAsie.webp" style="width: 43px;height: 43px;">
+    </button>
+    <!-- Menu Side Bar Button -->
+
+    <!-- JAVASCRIPT Local appelé après le chargement de la page-->
+    <script src="./scripts/custom-after-script.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/032b0d3637.js" crossorigin="anonymous"></script>
