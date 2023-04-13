@@ -109,3 +109,7 @@
     background-color: var(--oasie-rouge);
     color: var(--oasie-jaune);
 }
+
+.text-justify {
+    text-align: justify;
+}
